@@ -2,6 +2,7 @@ package com.heyanle.easybangumi_extension
 
 import com.heyanle.easybangumi4.source_api.Source
 import com.heyanle.easybangumi4.source_api.SourceFactory
+import io.github.peacefulprogram.easybangumi_555dy.Dy555ApiSource
 
 
 /**
@@ -12,7 +13,7 @@ class EasySourceFactory: SourceFactory {
 
     override fun create(): List<Source> {
         return listOf(
-            // 添加你的源
+            Dy555ApiSource()
         )
     }
 }
